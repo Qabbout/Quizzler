@@ -28,6 +28,7 @@
 		F74580EA2769536C00C0A955 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7BE59E32769EADD0020E294 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		F7BE59E82769F4D50020E294 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		F7BE59EA276A0F670020E294 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		F74580D02769536700C0A955 = {
 			isa = PBXGroup;
 			children = (
+				F7BE59EA276A0F670020E294 /* README.md */,
 				F74580DB2769536700C0A955 /* Quizzler */,
 				F74580DA2769536700C0A955 /* Products */,
 			);
