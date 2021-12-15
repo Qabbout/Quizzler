@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         progressBar.layer.cornerRadius = 8
+        trueButton.layer.cornerRadius = 8
+        falseButton.layer.cornerRadius = 8
         updateUI()
     }
 
@@ -28,24 +30,43 @@ class ViewController: UIViewController {
         let isAnswerRight = quizBrain.checkAnswer(for: userAnswer)
         
         if isAnswerRight {
-            sender.backgroundColor = .green
+            
+
+            UIView.animate(withDuration: 0.8, delay: 0, animations: {
+                
+                sender.layer.borderWidth = 3
+                sender.layer.borderColor = UIColor.green.cgColor
+                sender.layer.borderWidth = 0
+                
+            })
+            
         }
         else {
-            sender.backgroundColor = .red
+            UIView.animate(withDuration: 0.5, delay: 0, animations: {
+                sender.layer.borderWidth = 3
+                sender.layer.borderColor = UIColor.red.cgColor
+                sender.layer.borderWidth = 0
+            })
+            
         }
         
         quizBrain.nextQuestion()
-        
-        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
+        updateUI()
     }
     
     @objc func updateUI(){
         questionLabel.text = quizBrain.getQuestionText()
-        progressBar.progress = quizBrain.getProgress()
-        scoreLabel.text = "Score: \(quizBrain.getScore()) / \(quizBrain.quiz.count)"	 
+        scoreLabel.text = "Score: \(quizBrain.getScore()) / \(quizBrain.quiz.count)"
+        progressBar.setProgress(quizBrain.getProgress(), animated: true)
+        UIView.animate(withDuration: 0.5, delay: 0 , animations: { [weak self] in
+            self?.trueButton.layer.borderColor = UIColor.clear.cgColor
+            self?.falseButton.layer.borderColor = UIColor.clear.cgColor
+            
+
+        })
+           
         
-        trueButton.backgroundColor = .clear
-        falseButton.backgroundColor = .clear
+        
     }
     
 }
