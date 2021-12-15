@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="128" id="NNR-tS-ZOE"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-I6-gpH">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qyf-I6-gpH">
                                 <rect key="frame" x="20" y="44" width="374" height="818"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1A-Wa-HWY" userLabel="Score">
@@ -33,19 +33,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="1000" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5zJ-Hw-AO7" userLabel="Question">
-                                        <rect key="frame" x="0.0" y="20.5" width="374" height="567.5"/>
+                                        <rect key="frame" x="0.0" y="30.5" width="374" height="527.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOy-mc-LVz" userLabel="True">
-                                        <rect key="frame" x="0.0" y="588" width="374" height="110"/>
+                                        <rect key="frame" x="0.0" y="568" width="374" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="7bX-RP-gNK"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="True">
-                                            <backgroundConfiguration key="background" image="Rectangle" imageContentMode="scaleAspectFit"/>
+                                            <backgroundConfiguration key="background" cornerRadius="0.0" image="Rectangle" imageContentMode="scaleAspectFit"/>
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
@@ -54,13 +54,13 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-LR-YCw" userLabel="False">
-                                        <rect key="frame" x="0.0" y="698" width="374" height="110"/>
+                                        <rect key="frame" x="0.0" y="688" width="374" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="wkI-cJ-EVy"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="False">
-                                            <backgroundConfiguration key="background" image="Rectangle" imageContentMode="scaleAspectFit"/>
+                                            <backgroundConfiguration key="background" cornerRadius="0.0" image="Rectangle" imageContentMode="scaleAspectFit"/>
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
