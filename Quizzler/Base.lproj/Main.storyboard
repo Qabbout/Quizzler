@@ -49,6 +49,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fzl-21-l5n"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqQ-LR-YCw" userLabel="False">
                                         <rect key="frame" x="0.0" y="691" width="374" height="118"/>
@@ -61,6 +64,9 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTq-cj-4pN"/>
+                                        </connections>
                                     </button>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" progressViewStyle="bar" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lgS-Os-jIk">
                                         <rect key="frame" x="0.0" y="809" width="374" height="1"/>
@@ -84,6 +90,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ReF-Ao-fFW" secondAttribute="trailing" id="pdB-7x-W0E"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="falseButton" destination="eqQ-LR-YCw" id="485-19-tp1"/>
+                        <outlet property="progressBar" destination="lgS-Os-jIk" id="nX5-kN-ngs"/>
+                        <outlet property="questionLabel" destination="5zJ-Hw-AO7" id="yOq-cc-7bg"/>
+                        <outlet property="trueButton" destination="hOy-mc-LVz" id="c1k-lN-BNt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
