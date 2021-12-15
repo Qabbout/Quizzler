@@ -23,9 +23,11 @@ struct QuizBrain {
         Question(q: "Chocolate affects a dog's heart and nervous system; a few ounces are enough to kill a small dog.", a: "True")
     ]
     var questionNumber = 0
-    
-    func checkAnswer(for userAnswer: String) -> Bool{
+    var score = 0
+
+    mutating func checkAnswer(for userAnswer: String) -> Bool{
         if userAnswer == quiz[questionNumber].answer {
+            score += 1
             return true
         }
         else {
@@ -46,7 +48,12 @@ struct QuizBrain {
         }
         else {
             questionNumber = 0
+            score = 0
         }
+    }
+    
+    func getScore() -> Int {
+        return score
     }
     
 }
